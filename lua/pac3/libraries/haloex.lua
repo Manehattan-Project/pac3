@@ -145,6 +145,7 @@ function haloex.Render( entry )
 		render.SetRenderTarget( OldRT )
 		render.SetColorModulation( 1, 1, 1 )
 		render.SetStencilEnable( false );
+	-- Set override to false to fix issue with arc9 guns becoming black
 		render.OverrideDepthEnable( true, false )
 		render.SetBlend( 1 );
 		mat_Copy:SetTexture( "$basetexture", rt_Store )
